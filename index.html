@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WELCOME</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo-img {
+      width: 45px;
+      height: 45px;
+      border-radius: 25%;
+    }
+
+    .logo-title {
+      font-size: 25px;
+      margin-top: 13px;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .img-foto {
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+
+    .parallax {
+      background-image: url("background.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 50px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .tentang {
+      margin-bottom: 20px;
+    }
+
+    .card {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card-item {
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .card-item .icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      margin-bottom: 14px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* Animasi tambahan */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="foto1.jpeg" alt="logo" class="logo-img" />
+      <h1 class="logo-title fade-in">FARIS PT</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#jasa">INFO</a></li>
+        <li><a href="https://instagram.com/fariispt">KONTAK</a></li>
+      </ul>
+    </nav>
+    <button class="btn-cta" onclick="redirInstagram()">Follow me</button>
+  </header>
+  <div class="container">
+    <div class="intro fade-in">
+      <p class="title">Hello, Faris Pratama here!</p>
+      <p class="description">Welcome to Visit My Website.</p>
+      <img src="foto3.jpeg" alt="" class="img-foto" />
+    </div>
+  </div>
+  <div class="parallax">
+    <div class="tentang">
+      <p class="title">I am Faris Pratama</p>
+      <p class="description">Nice to meet you, I hope you are always healthy and successful always.</p>
+      <p class="title">Thank you for visiting.</p>
+      <div class="mt-10">
+        <button class="btn-cta" onclick="redirWhatsapp()">Contact me</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card" id="jasa">
+        <div class="card-item">
+          <img src="foto4.jpeg" alt="icon 1" class="icon" />
+          <p class="card-title">Info Crypto and Stock</p>
+          <p class="card-description">Info Crypto and stock, let's trade with me</p>
+        </div>
+        <div class="card-item">
+          <img src="foto6.jpeg" alt="icon 2" class="icon" />
+          <p class="card-title">Digital Services</p>
+          <p class="card-description">Making Websites, logos, applications, programs, posters, etc.</p>
+        </div>
+        <div class="card-item">
+          <img src="foto5.jpeg" alt="icon 3" class="icon" />
+          <p class="card-title">Info Property</p>
+          <p class="card-description">Info Property and construction and property services.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="title">&copy; Faris Pratama Website 2022</p>
+  </footer>
+
+  <script>
+    function redirInstagram() {
+      window.location.href = "https://instagram.com/fariispt";
+    }
+
+    function redirWhatsapp() {
+      window.location.href = "https://wa.me/+6283170186199";
+    }
+  </script>
+</body>
+
+</html>
